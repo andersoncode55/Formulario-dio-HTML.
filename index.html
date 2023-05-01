@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário-dio-HTML</title>
+</head>
+<body>
+    <h1>Formulário-dio-HTML</h1>
+
+
+
+
+
+
+    <h1>Form O atributo "autocomplete"</h1>
+    <!--O atributo "autocomplete" é utilizado em elementos de formulário em HTML para indicar se o navegador deve ou não fornecer sugestões de preenchimento automático para o usuário. -->
+    <!--Ele é um atributo booleano, o que significa que ele pode ser definido como "on" ou "off".-->
+    <!--Quando o valor do atributo "autocomplete" é definido como "on", o navegador fornece sugestões de preenchimento automático para o usuário com base no histórico de formulários e entradas anteriores.-->
+    <!--Por outro lado, quando o valor é definido como "off", o navegador não fornecerá sugestões de preenchimento automático.-->
+    <!--Aqui está um exemplo de como usar o atributo "autocomplete" em um formulário HTML:-->
+
+    <form action="/exemplo" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" autocomplete="on">
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" autocomplete="off">
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+
+      <!--Neste exemplo, o campo "nome" terá sugestões de preenchimento automático ativadas, enquanto o campo "email" terá a opção desativada. -->
+      <!--Isso significa que o navegador fornecerá sugestões de preenchimento automático para o campo "nome", mas não para o campo "email".-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <h1>O atributo "onsubmit"</h1>
+     <!--O atributo "onsubmit" é usado em elementos de formulário HTML para especificar o código que deve ser executado quando o formulário é enviado pelo usuário, geralmente através do botão de envio (submit).-->
+     <!--Ele permite que o desenvolvedor defina uma função JavaScript que será chamada quando o formulário for enviado.-->
+     <!--Aqui está um exemplo de como usar o atributo "onsubmit" em um formulário HTML:-->
+     <form onsubmit="validarForm()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+      
+      <script>
+      function validarForm() {
+        // código para validar o formulário
+        alert("O formulário foi enviado com sucesso!");
+      }
+      </script>
+
+    <!--Neste exemplo, a função "validarForm()" é chamada quando o formulário é enviado. Essa função pode ser usada para validar os campos do formulário antes de enviá-lo ao servidor.-->
+    <!--Se tudo estiver correto, a função exibirá uma mensagem de sucesso em uma janela de alerta. Caso contrário, a função pode exibir uma mensagem de erro ou impedir o envio do formulário.-->
+    
+            
+</body>
+</html>
